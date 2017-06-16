@@ -1,0 +1,3 @@
+track the win/loss count (wins vs losses) use a variable in js and update an element on the page (like a stats section)
+
+use getelementbyid and span like before, use the message div as an example

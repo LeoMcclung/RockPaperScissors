@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Ghetto Rock Paper Scissors
+
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<script src="RockPaperScissors.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="game">
+				<button onclick="playGame('rock')" class="my-button"><img src="aRock1.jpg"></button>
+				<button onclick="playGame('paper')" class="my-button"><img src="toiletpaper1.jpg"></button>
+				<br>
+				<button onClick="playGame('scissors')" class="my-button"><img src="GiantScissors.jpg"></button>
+			</div>
+			<div id="message">
+				Player Chose: <span id="player-choice"> n/a </span>
+				<br>
+				Computer Chose: <span id="computer-choice"> n/a </span>
+				<br>
+				Result: <span id="result"> n/a </span>
+				<br>
+				<button onclick="playAgain()"> Play Again? </button>
+			</div>
+			<div id = "tracker">
+				Wins: <span id = "wins"> n/a </span>
+				<br>
+				Losses: <span id = "losses"> n/a </span>
+				<br>
+				Ties: <span id = "ties"> n/a </span>
+			</div>
+		</div>
+	</body>
+</html>
