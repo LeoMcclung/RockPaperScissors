@@ -6,20 +6,20 @@ var ties = 0;
 function compare(choice1, choice2) {
     if (choice1 === choice2) {
         return 0;
-    } else if (choice1 === "rock") {
-        if (choice2 === "scissors") {
+    } else if (choice1 === "stein") {
+        if (choice2 === "schere") {
             return 1;
         } else {
             return 2;
         }
-    } else if (choice1 === "paper") {
-        if (choice2 === "rock"){
+    } else if (choice1 === "papier") {
+        if (choice2 === "stein"){
             return 1;
         } else {
             return 2;
         }
-    } else if (choice1 === "scissors") {
-        if (choice2 === "paper") {
+    } else if (choice1 === "schere") {
+        if (choice2 === "papier") {
             return 1;
         } else {
             return 2;
@@ -32,11 +32,11 @@ function getComputerChoice() {
     console.log(computerChoice)  
 
     if (computerChoice <= 0.33) {
-        computerChoice = "rock";
+        computerChoice = "stein";
     } else if (computerChoice >= 0.34 && computerChoice <= 0.66) {
-        computerChoice="paper";
+        computerChoice="papier";
     } else {
-        computerChoice = "scissors";
+        computerChoice = "schere";
     } 
     console.log("Computer: " + computerChoice);
     return computerChoice;
@@ -56,12 +56,12 @@ function playGame(userChoice) {
         resultElement.innerHTML = "The game is a tie"
         ties++
     }else if (gameResult === 1) {
-        console.log("Player Wins")
-        resultElement.innerHTML = "Player Wins"
+        console.log("Spieler Gewinnt")
+        resultElement.innerHTML = "Spieler Gewinnt"
         wins++
     }else {
-        console.log("Computer Wins")
-        resultElement.innerHTML = "Computer Wins"
+        console.log("Computer Gewinnt")
+        resultElement.innerHTML = "Computer Gewinnt"
         losses++
     }
     document.getElementById("game").style.display = "none";
